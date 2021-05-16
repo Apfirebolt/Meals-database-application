@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --dest ./backend/vue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@vue/eslint-config-airbnb": "^5.3.0",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
@@ -25,6 +26,7 @@
     "env": {
       "node": true
     },
+    "eslintIgnore": ["hello.js", "world.js"],
     "extends": [
       "plugin:vue/essential",
       "eslint:recommended"
